@@ -23,7 +23,7 @@ class BusinessScreen extends StatelessWidget {
               physics:  const BouncingScrollPhysics(),
               itemBuilder: (context,index)=>buildItemList(list[index],context),
               separatorBuilder: (context,index)=>divideListView(), itemCount: list.length),
-          fallbackBuilder: (BuildContext context) => const Center(child:  CircularProgressIndicator(color: Colors.deepOrange,)),
+          fallbackBuilder: (BuildContext context) => const Center(child:  CircularProgressIndicator()),
         );
       }
     );
